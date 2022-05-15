@@ -5,10 +5,16 @@
 @tailwind utilities;
 
 body {
-  background: #1f1d2b;
-  color: #f9f9f9;
+  background: #1f1d2b !important;
+  color: #f9f9f9 !important;
 }
 
 .font-cairo {
   font-family: 'Cairo', sans-serif !important;
+}
+
+@layer components {
+  .filter-btn {
+    @apply text-app-light1 text-xl w-24 py-2 rounded-md cursor-pointer border-2 border-app-accent transition-all duration-200 hover:opacity-70;
+  }
 }
