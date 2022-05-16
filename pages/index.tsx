@@ -1,10 +1,12 @@
 import type { NextPage } from 'next';
+import { Layout } from '@/components/Layout';
+import { HomeContent } from '@/components/home';
 
 const HomePage: NextPage = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <Layout>
+      <HomeContent />
+    </Layout>
   );
 };
 
