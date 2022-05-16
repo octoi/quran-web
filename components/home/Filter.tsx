@@ -14,7 +14,7 @@ export const Filter: React.FC<Props> = ({ pageState, setPageState }) => {
   return (
     <div className='m-5 flex flex-col justify-center items-center'>
       <h1 className='text-4xl font-medium text-app-light1'>Quran App</h1>
-      <div className='mt-10 p-4 w-full md:w-1/2 lg:w-1/3 rounded-md bg-app-dark2 text-xl text-app-light2 flex items-center'>
+      <div className='mt-10 mb-10 p-4 w-full md:w-1/2 lg:w-1/3 rounded-md bg-app-dark2 text-xl text-app-light2 flex items-center'>
         <input
           type='text'
           placeholder='Search . . .'
@@ -24,7 +24,7 @@ export const Filter: React.FC<Props> = ({ pageState, setPageState }) => {
         />
         <BiSearch className='ml-1' />
       </div>
-      <div className='mt-5'>
+      {/* <div className='mt-5'>
         <button
           onClick={() => setPageState(PageState.Surah)}
           className={`filter-btn ${
@@ -41,7 +41,7 @@ export const Filter: React.FC<Props> = ({ pageState, setPageState }) => {
         >
           Juz
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
